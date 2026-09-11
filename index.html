@@ -6,7 +6,7 @@
   <title>VMP - Sistema de Presença VMP</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e);s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '1005684288934295'); fbq('track', 'PageView');
   fbq('track', 'ViewContent', {content_name: 'VMP Sistema de Realinhamento', content_ids: ['vmp-realinhamento'], content_type: 'product', value: 67.00, currency: 'BRL'});
   </script>
@@ -14,20 +14,22 @@
   <style>
     body {margin:0; padding:0; background:#0B0B0B; color:#fff; font-family:'Inter',sans-serif; display:flex; justify-content:center; flex-direction:column; align-items:center;}
 .bainer-topo {
-      background:rgba(10,10,10,0.9);
-      color:rgba(255,255,255,0.85);
+      background:rgba(10,10,10,0.95);
+      color:#fff;
       text-align:center;
       padding:7px 14px;
-      font-weight:500;
+      font-weight:600;
       font-size:10px;
       width:fit-content;
       max-width:75%;
       margin:12px auto 0;
-      letter-spacing:0.5px;
-      border:1px solid rgba(212,175,55,0.3);
+      letter-spacing:0.6px;
+      border:1.2px solid #D4AF37;
       border-radius:999px;
-      line-height:1.2;
+      line-height:1.25;
       box-sizing:border-box;
+      text-transform:uppercase;
+      box-shadow:0 0 12px rgba(212,175,55,0.18);
     }
 .container {width:100%; max-width:900px; padding:40px 16px; text-align:center; box-sizing:border-box; margin:0 auto;}
 .cabecalho {font-size:12px; letter-spacing:2px; font-weight:500; text-align:center; margin:0 0 24px 0; color:rgba(255,255,255,0.55);}
@@ -36,7 +38,7 @@
 .legenda-video {color:#888; font-size:12px; text-align:center; margin-bottom:12px; font-weight:500;}
 .video-wrapper {position:relative; width:100%; padding-bottom:56.25%; overflow:hidden; border-radius:0; background:#0B0B0B; margin-bottom:32px;}
 .video-wrapper kv-player {position:absolute; width:100%; height:100%; top:0; left:0; border:none;}
-.vmp-button {display:inline-block; width:auto; padding:12px 32px; background:#D4AF37; color:#000; text-decoration:none; font-weight:800; font-size:15px; border-radius:999px; margin:0 auto 8px; text-transform:uppercase; letter-spacing:0.5px; box-shadow:0 2px 10px rgba(212,175,55,0.3); transition:all 0.3s ease; border:none; cursor:pointer;}
+.vmp-button {display:block; width:fit-content; max-width:85%; padding:11px 20px; margin:0 auto 8px; background:#D4AF37; color:#000; text-decoration:none; font-weight:800; font-size:14px; border-radius:999px; text-transform:uppercase; letter-spacing:0.5px; box-shadow:0 2px 10px rgba(212,175,55,0.3); transition:all 0.3s ease; border:none; cursor:pointer;}
 .vmp-button:hover{background:#C9A227; transform:translateY(-1px); box-shadow:0 4px 15px rgba(212,175,55,0.4);}
 .vmp-button:disabled {opacity:0.7; cursor:not-allowed; transform:none;}
 .divider {width:100%; height:1px; background:linear-gradient(90deg, transparent, #B8860B, transparent); margin:40px 0; opacity:0.6;}
@@ -69,12 +71,12 @@
 <div style="font-size:11px; color:#7A7A7A; padding-top:10px; font-weight:400; line-height:1.6;">Sistema de Presença VMP © 2026. Todos os direitos reservados.<br><br>Este produto não garante resultados. Qualquer resultado depende da natureza individual de cada pessoa.<br><br><span style="color:#888;">Termos de Uso • Política de Privacidade • Suporte</span></div>
 </div>
 <script>
-  const btnVsl = document.getElementById('btnVsl');
-  btnVsl.addEventListener('click', () => {
+  const btnVsl = http://document.getElementById('btnVsl');
+  http://btnVsl.addEventListener('click', () => {
     fbq('track', 'InitiateCheckout', {value: 67.00, currency: 'BRL', content_ids: ['vmp-realinhamento'], content_name: 'VMP Realinhamento', content_type: 'product'});
-    btnVsl.innerText = "Ajustando sua Presença…"; btnVsl.disabled = true;
+    http://btnVsl.innerText = "Ajustando sua Presença…"; http://btnVsl.disabled = true;
     setTimeout(() => {window.location.href = "https://pay.cakto.com.br/v8qz43t_899652";}, 1500);
   });
 </script>
 </body>
-  </html>
+</html>[0]

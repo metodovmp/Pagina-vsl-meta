@@ -45,14 +45,20 @@
     }
 
 .bainer-topo {
-      background:#ff0000;
+      background:#0A0A0A;
       color:#fff;
       text-align:center;
-      padding:10px;
-      font-weight:700;
+      padding:14px 16px;
+      font-weight:600;
       font-size:13px;
-      width: 100%;
-      letter-spacing:0.5px;
+      width: calc(100% - 32px);
+      max-width: 900px;
+      margin:16px auto 0;
+      letter-spacing:0.8px;
+      border:1.8px solid #D4AF37;
+      border-radius:12px;
+      box-shadow:0 0 18px rgba(212,175,55,0.18);
+      text-transform:uppercase;
     }
 
 .container {
@@ -169,7 +175,7 @@
 <body>
 
 <div class="bainer-topo">
-⚠️ SÓ HOJE: POR APENAS R$67. DEPOIS VOLTA PARA R$197
+SÓ HOJE: POR APENAS R$67. DEPOIS VOLTA PARA R$197
 </div>
 
 <div class="container">
@@ -180,7 +186,7 @@ SISTEMA DE PRESENÇA VMP
 
 <h1 style="font-size:34px; text-align:center; line-height:1.25; font-weight:800; margin:0 0 12px 0;">
   <span class="titulo-l1">NADA DÁ ERRADO</span> <br>
-  <span style="color:#C79A28 !important; opacity:1 !important; filter:none !important; text-shadow:0 0 10px rgba(199,154,40,0.18);">
+  <span style="color:#C79A28!important; opacity:1!important; filter:none!important; text-shadow:0 0 10px rgba(199,154,40,0.18);">
     MAS,
   </span> <br>
   <span class="titulo-l3">NADA MUDA</span>
@@ -216,7 +222,7 @@ SISTEMA DE PRESENÇA VMP
   </div>
 
 <button id="btnVsl" class="vmp-button">
-   QUERO INICIAR OS 7 PROTOCOLOS
+   QUERO ATIVAR OS 7 PROTOCOLOS
 </button>
 
 <div style="font-size:12px; color:#999; margin-bottom:24px; font-weight:500;">
@@ -242,10 +248,8 @@ SISTEMA DE PRESENÇA VMP
   const btnVsl = document.getElementById('btnVsl');
 
   btnVsl.addEventListener('click', () => {
-    // Dispara evento do Pixel
     fbq('track', 'InitiateCheckout', {value: 67.00, currency: 'BRL', content_ids: ['vmp-realinhamento'], content_name: 'VMP Realinhamento', content_type: 'product'});
 
-    // Gatilho de "Ajustando Leitura"
     btnVsl.innerText = "Ajustando sua Presença…";
     btnVsl.disabled = true;
 

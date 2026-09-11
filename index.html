@@ -6,7 +6,7 @@
   <title>VMP - Sistema de Presença VMP</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e);s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '1005684288934295'); fbq('track', 'PageView');
   fbq('track', 'ViewContent', {content_name: 'VMP Sistema de Realinhamento', content_ids: ['vmp-realinhamento'], content_type: 'product', value: 67.00, currency: 'BRL'});
   </script>
@@ -38,9 +38,8 @@
 .legenda-video {color:#888; font-size:12px; text-align:center; margin-bottom:12px; font-weight:500;}
 .video-wrapper {position:relative; width:100%; padding-bottom:56.25%; overflow:hidden; border-radius:0; background:#0B0B0B; margin-bottom:32px;}
 .video-wrapper kv-player {position:absolute; width:100%; height:100%; top:0; left:0; border:none;}
-.vmp-button {display:block; width:fit-content; max-width:85%; padding:11px 20px; margin:0 auto 8px; background:#D4AF37; color:#000; text-decoration:none; font-weight:800; font-size:14px; border-radius:999px; text-transform:uppercase; letter-spacing:0.5px; box-shadow:0 2px 10px rgba(212,175,55,0.3); transition:all 0.3s ease; border:none; cursor:pointer;}
-.vmp-button:hover{background:#C9A227; transform:translateY(-1px); box-shadow:0 4px 15px rgba(212,175,55,0.4);}
-.vmp-button:disabled {opacity:0.7; cursor:not-allowed; transform:none;}
+.vmp-button {display:block; width:fit-content; max-width:85%; padding:11px 20px; margin:0 auto 8px; background:#D4AF37; color:#000; text-decoration:none; font-weight:800; font-size:14px; border-radius:999px; text-transform:uppercase; letter-spacing:0.5px; box-shadow:0 2px 10px rgba(212,175,55,0.3); border:none; cursor:pointer;}
+.vmp-button:hover{background:#C9A227; transform:translateY(-1px);}
 .divider {width:100%; height:1px; background:linear-gradient(90deg, transparent, #B8860B, transparent); margin:40px 0; opacity:0.6;}
   </style>
 </head>
@@ -64,19 +63,17 @@
   <p style="color:#777; font-size:15px; line-height:1.7; margin:0 0 16px 0; font-weight:500;">Talvez o problema nunca tenha sido o que você fala.<br>Mas como você é percebido sem dizer nada.</p>
   <p style="color:#aaa; font-size:14px; line-height:1.6; margin:20px 0 0 0; font-weight:500;">Agora que você entendeu o problema, existe um método para reorganizar isso.</p>
   </div>
-<button id="btnVsl" class="vmp-button">QUERO ATIVAR OS 7 PROTOCOLOS</button>
+<a href="https://pay.cakto.com.br/v8qz43t_899652" id="linkCheckout" style="text-decoration:none;"><button id="btnVsl" class="vmp-button">QUERO ATIVAR OS 7 PROTOCOLOS</button></a>
 <div style="font-size:12px; color:#999; margin-bottom:24px; font-weight:500;">Acesso Imediato • 100% Online.</div>
 <div style="font-size:13px; color:#999; margin-top:32px; line-height:1.7; font-weight:500;">Garantia incondicional de <span style="color:#D4AF37; font-weight:800;">7 dias</span>.<br>Se não fizer sentido para você, devolvemos <span style="color:#D4AF37; font-weight:800;">100%</span> do seu investimento.</div>
 <div class="divider"></div>
 <div style="font-size:11px; color:#7A7A7A; padding-top:10px; font-weight:400; line-height:1.6;">Sistema de Presença VMP © 2026. Todos os direitos reservados.<br><br>Este produto não garante resultados. Qualquer resultado depende da natureza individual de cada pessoa.<br><br><span style="color:#888;">Termos de Uso • Política de Privacidade • Suporte</span></div>
 </div>
 <script>
-  const btnVsl = http://document.getElementById('btnVsl');
-  http://btnVsl.addEventListener('click', () => {
-    fbq('track', 'InitiateCheckout', {value: 67.00, currency: 'BRL', content_ids: ['vmp-realinhamento'], content_name: 'VMP Realinhamento', content_type: 'product'});
-    http://btnVsl.innerText = "Ajustando sua Presença…"; http://btnVsl.disabled = true;
-    setTimeout(() => {window.location.href = "https://pay.cakto.com.br/v8qz43t_899652";}, 1500);
+  const btnVsl = document.getElementById('btnVsl');
+  btnVsl.addEventListener('click', (e) => {
+    try { fbq('track', 'InitiateCheckout', {value: 67.00, currency: 'BRL', content_ids: ['vmp-realinhamento'], content_name: 'VMP Realinhamento', content_type: 'product'}); } catch(err){}
   });
 </script>
 </body>
-</html>[0]
+</html>

@@ -6,7 +6,7 @@
   <title>VMP - Sistema de Presença VMP</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e);s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '1005684288934295'); fbq('track', 'PageView');
   fbq('track', 'ViewContent', {content_name: 'VMP Sistema de Realinhamento', content_ids: ['vmp-realinhamento'], content_type: 'product', value: 67.00, currency: 'BRL'});
   </script>
@@ -22,7 +22,7 @@
       font-size:10px;
       width:fit-content;
       max-width:75%;
-      margin:12px auto 0;
+      margin:22px auto 0;
       letter-spacing:0.6px;
       border:1.2px solid #D4AF37;
       border-radius:999px;
@@ -31,8 +31,7 @@
       text-transform:uppercase;
       box-shadow:0 0 12px rgba(212,175,55,0.18);
     }
-.container {width:100%; max-width:900px; padding:40px 16px; text-align:center; box-sizing:border-box; margin:0 auto;}
-.cabecalho {font-size:12px; letter-spacing:2px; font-weight:500; text-align:center; margin:0 0 24px 0; color:rgba(255,255,255,0.55);}
+.container {width:100%; max-width:900px; padding:0 16px 40px; text-align:center; box-sizing:border-box; margin:0 auto;}
 .titulo-l1 {background:linear-gradient(180deg, #FFD700 0%, #DAA520 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;}
 .titulo-l3 {background:linear-gradient(180deg, #FFD700 0%, #C9A227 30%, #B8860B 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; filter:drop-shadow(0 0 10px rgba(255,215,0,0.35)); font-size:1.08em;}
 .legenda-video {color:#888; font-size:12px; text-align:center; margin-bottom:12px; font-weight:500;}
@@ -46,8 +45,7 @@
 <body>
 <div class="bainer-topo">SÓ HOJE: ACESSO TURBO DE R$97 POR R$39,90</div>
 <div class="container">
-<div class="cabecalho">SISTEMA DE PRESENÇA VMP</div>
-<h1 style="font-size:34px; text-align:center; line-height:1.25; font-weight:800; margin:0 0 12px 0;">
+<h1 style="font-size:34px; text-align:center; line-height:1.25; font-weight:800; margin:28px 0 12px 0;">
   <span class="titulo-l1">NADA DÁ ERRADO</span> <br>
   <span style="color:#C79A28!important; opacity:1!important; filter:none!important; text-shadow:0 0 10px rgba(199,154,40,0.18);">MAS,</span> <br>
   <span class="titulo-l3">NADA MUDA</span>
@@ -70,8 +68,8 @@
 </div>
 </div>
 <script>
-  const btnVsl = http://document.getElementById('btnVsl');
-  http://btnVsl.addEventListener('click', (e) => {
+  const btnVsl = document.getElementById('btnVsl');
+  btnVsl.addEventListener('click', (e) => {
     try { fbq('track', 'InitiateCheckout', {value: 67.00, currency: 'BRL', content_ids: ['vmp-realinhamento'], content_name: 'VMP Realinhamento', content_type: 'product'}); } catch(err){}
   });
 </script>
